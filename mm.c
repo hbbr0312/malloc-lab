@@ -138,7 +138,7 @@ void *find_fit(size_t asize)
     return NULL; /* No fit */
 }
 
-/* allocate block by given size to given address and insert remain to seglist */
+/* allocate block by given size to given address */
 void place(void *bp, size_t asize)
 {
     size_t csize = GET_SIZE(HDRP(bp));
