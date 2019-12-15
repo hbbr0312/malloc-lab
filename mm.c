@@ -256,7 +256,7 @@ void *mm_realloc(void *ptr, size_t size)
         }
         else
         {
-            newptr = mm_malloc(size + (1 << 9));
+            newptr = mm_malloc(size + (1 << 7));
             if (newptr == NULL)
                 return NULL;
             oldsize -= DSIZE;
